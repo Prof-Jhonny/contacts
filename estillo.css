@@ -1,0 +1,225 @@
+@font-face {
+	font-family: "poppins";
+	src: url("fontes/Poppins/Poppins-Bold.ttf");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "poppins";
+}
+body {
+	background-color: #a3d8cc;
+}
+
+a{
+	text-decoration: none;
+}
+a p{
+	text-decoration: none;
+}
+
+.menu {
+	display: flex;
+	height: 40px;
+	line-height: 40px;
+	/* background-color: #d50102; */
+	/* fallback for old browsers */
+	background: #fccb90;
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+.menu ul {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+.menu ul a {
+	color: white;
+	transition: 0.5s;
+}
+.menu ul a:hover {
+	text-shadow: 0 0 6px rgb(7, 105, 141);
+}
+li span{
+	line-height: 40px;
+}
+
+/* Menu dropdown */
+.dropbtn {
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background: #ee7724;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	transition: 1s;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {background: #d8363a;}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+
+
+  /* fim do dropdown */
+
+.w3rcontainer {
+	border: 3px solid #cccfdb;
+	border-radius: 4px;
+}
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #ffffff;
+}
+
+.hover-underline-animation:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 4px;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+#alerta{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	width: 100%;
+	height: 100%;
+	background-color: #f08c28e0;
+	color: white;
+}
+
+input[type=file]{
+	display: none;
+}
+
+.barraPesquisa{
+	width: 100vw;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contatos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.contatos > div {
+	border: solid 4px #d50102;
+	text-align: center;
+	float: left;
+	margin: 10px;
+	width: 300px;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #d5010192;
+	/* height: 330px; */
+}
+.contatos>div>a>p{
+	color: #0d74a6;
+}
+.contatos>div>div>a{
+	border: solid 1px black;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background: #fccb90;
+	color: white;
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ee7724, #b44593);
+	transition: 0.5s;
+}
+.contatos>div>div>a:hover{
+	background: #ee7724;
+}
+
+
+.container-img {
+	width: 90%;
+	height: 140px;
+	overflow: hidden;
+	margin: 10px 5%;
+	text-align: center;
+}
+
+.container-img img {
+	max-width: 100%;
+	max-height: 100%;
+	
+}
+
+.metade {
+	width: 50%;
+	text-align: center;
+	padding: 10px 0;
+	float: left;
+}
+
+.container-img-incluir {
+	float: right;
+	height: 300px;
+	width: 500px;
+	overflow: hidden;
+}
+#previewImg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.gradient-custom-2 {
+	/* fallback for old browsers */
+	background: #fccb90;
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+
